@@ -7,7 +7,6 @@
   Board.SIZE = 20;
   Board.prototype.render = function() {
     var rowString;
-    console.log(this.snake.segments)
     for (var row = 0; row < Board.SIZE; row++ ){
       rowString = "";
       for (var col = 0; col < Board.SIZE; col++) {
@@ -17,7 +16,6 @@
           rowString += ".";
         }
       };
-      console.log(rowString);
     }
   }
 

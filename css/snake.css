@@ -1,0 +1,132 @@
+html, body, figure, figcaption, ul, li, h1, h2, div, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+  background: transparent;
+}
+
+@font-face {
+    font-family: neutronium;
+    src: url('Neutronium.ttf');
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: neutronium, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  background-image: url("background2.jpg");
+}
+
+h1 {
+  letter-spacing: 6px;
+  color: #73FDFF;
+  font-size: 60px;
+  margin: 30px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+ul {
+}
+
+ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+li {
+  float: left;
+  width: 10px;
+  height: 10px;
+}
+
+figure {
+  position: relative;
+  display: inline-block;
+  /*border: 1px solid white;*/
+  width: 1000px;
+  height: 500px;
+}
+
+.main .show {
+  display: block;
+}
+
+.replay {
+  float: left;
+  color: #73FDFF;
+  letter-spacing: 4px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.replay > h2 {
+  font-size: 35px;
+}
+
+.replay > p {
+  font-size: 20px;
+}
+
+.replay > button {
+  display: none;
+  margin-top: 40px;
+  color: #76EE00;
+  font-size: 28px;
+  letter-spacing: 4px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  cursor: pointer;
+}
+
+.replay > button:hover {
+  color: green ;
+}
+
+.snake1-points {
+  color: blue;
+}
+
+.snake2-points {
+  color: red;
+}
+
+.game {
+  float: left;
+  /*display: inline-block;*/
+  border: 2px solid white;
+  background: black;
+}
+
+.bait {
+  background: #76EE00;
+}
+
+.snake1 {
+  background: cyan;
+}
+
+.snake2 {
+  background: red;
+}
+
+.game-paused {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 36%;
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: #76EE00;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

@@ -1,16 +1,47 @@
 <html>
   <head>
-    <script src='snake.js'></script>
-    <script src='board.js'></script>
-    <script src='snake-view.js'></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/snake.css">
+    <script src='../js/jquery-1.9.1.js'></script>
+    <script src='../js/snake.js'></script>
+    <script src='../js/snake-view.js'></script>
   </head>
 
   <body>
-
+    <h1>TRONSNAKE</h1>
+    <figure class="main group">
+      <div class="replay">
+        <h2>SCOREBOARD</h2>
+        <p class="snake1-points">
+          Player Blue<br>0
+        </p>
+        <p class="snake2-points">
+          Player Red<br>0
+        </p>
+        <button id="restart" class="show">
+          Click to Play
+        </button>
+      </div>
+      <div class="game"></div>
+      <div class="instructions"></div>
+      <div class="game-paused">Press Spacebar</div>
+    </figure>
     <script>
-      var view = new SnakeGame.View();
-      view.step();
-    </script>
+      $(function() {
+        SnakeGame.growthRate = 10;
+        SnakeGame.dim = 50;
+        SnakeGame.MillSpeed = 50;
+        SnakeGame.BaitPoints = 320;
+        SnakeGame.LifePoints = 3020;
+        // var MainView
+        // $('#restart').on("click", handleKey)
 
+        new SnakeGame.View($('.game'), $('.main'));
+
+        // handleKey = function(e) {
+        //   console.log("this works")
+        // }
+      });
+    </script>
   </body>
 </html>
