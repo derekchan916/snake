@@ -71,12 +71,12 @@ figure {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-.replay > h2 {
+h2 {
   font-size: 35px;
 }
 
-.replay > p {
-  font-size: 20px;
+p {
+  font-size: 25px;
 }
 
 .replay > button {
@@ -113,7 +113,7 @@ figure {
 }
 
 .snake1 {
-  background: cyan;
+  background: blue;
 }
 
 .snake2 {
@@ -129,4 +129,11 @@ figure {
   letter-spacing: 4px;
   color: #76EE00;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.instructions {
+  /*float: left;*/
+  color: #73FDFF;
+  letter-spacing: 4px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
